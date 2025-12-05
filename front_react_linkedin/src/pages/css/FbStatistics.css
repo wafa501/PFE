@@ -1,0 +1,139 @@
+.statistics-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+    gap: 80px; 
+    padding: 20px;
+}
+
+.stat-card {
+    background: linear-gradient(135deg, #f0f4f8, #e1e7eb);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.2s;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-icon {
+    font-size: 2em;
+    color: #007bff; 
+    margin-bottom: 10px;
+}
+
+.stat-title {
+    font-size: 1.5em;
+    margin: 0;
+    color: #333;
+}
+
+.stat-description {
+    font-size: 0.9em;
+    color: #666;
+}
+
+@keyframes scrollUp {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-100%); }
+}
+
+.stat-value {
+    font-size: 2em;
+    font-weight: bold;
+    color: #007bff;
+    display: block;
+    margin: 10px 0;
+    position: relative;
+    overflow: hidden;
+    height: 2.5em; 
+}
+
+.stat-value span {
+    display: block;
+    animation: scrollUp 5s linear infinite;
+}
+
+
+.stat-period {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 0.8em;
+    color: #aaa;
+}
+
+.chart-container {
+    width: 100%; 
+    height: 400px; 
+    margin: 20px 0;
+    margin-left: 20px;
+
+}
+
+.view-toggle {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.toggle-button {
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin: 0 10px;
+}
+
+.toggle-button:hover {
+    background: #0056b3;
+}
+
+.toggle-button.active {
+    background: #0056b3;
+    font-weight: bold;
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+@keyframes resize {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.stat-value {
+    font-size: 2em;
+    font-weight: bold;
+    color: #007bff;
+    display: block;
+    margin: 10px 0;
+    animation: resize 2s infinite;
+}

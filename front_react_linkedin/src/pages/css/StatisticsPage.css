@@ -1,0 +1,34 @@
+
+.statistics-container {
+    padding: 20px;
+}
+
+.statistics-section {
+    margin-bottom: 30px;
+}
+
+.stats-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.stats-table th, .stats-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.stats-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.stats-details {
+    text-align: center;
+    padding: 20px;
+}
+
+.canvas-container {
+    max-width: 100%;
+    overflow-x: auto;
+}

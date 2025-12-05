@@ -1,0 +1,15 @@
+.btn1{
+    background-color: #ffffff;
+    text-decoration: none;
+    color: #555;
+    font-size: 18px;
+    display: block;
+    padding: 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+.btn1:hover, .btn1:focus {
+    background-color: #0e76a8;
+    color: #fff;
+    transform: scale(1.05);
+}

@@ -1,0 +1,51 @@
+/* Conteneur principal avec un contour stylé */
+.social-media-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background-color: rgb(239, 242, 247);
+    border: 2px solid #0077b5; 
+    border-radius: 20px;
+    margin: 20px; 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); 
+    position: relative;
+  }
+  
+  .logo {
+    margin: 0 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .logo img {
+    width: 150px;
+    height: 150px;
+    transition: transform 0.3s ease;
+  }
+  
+  .logo:hover img {
+    transform: scale(1.2);
+  }
+  
+  .facebook-logo {
+    animation: bounce 2s infinite;
+  }
+  
+  .linkedin-logo {
+    animation: bounce 2s infinite 0.5s;
+  }
+  
+  /* Animation de rebond */
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+  

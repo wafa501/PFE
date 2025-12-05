@@ -1,0 +1,87 @@
+/* ===== TABLE STYLE ===== */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+thead tr {
+    background: #eef2f7;
+}
+
+th, td {
+    padding: 14px 16px;
+    text-align: left;
+    font-size: 15px;
+}
+
+tbody tr {
+    transition: 0.25s ease;
+}
+
+tbody tr:hover {
+    background: #f5f9ff;
+}
+
+/* ===== BADGES ===== */
+
+.badge-admin {
+    background: #0069ff;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.badge-user {
+    background: #00b894;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* ===== ACTION BUTTONS ===== */
+
+.action-btn {
+    padding: 8px 14px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    margin-right: 8px;
+}
+
+.action-btn:hover {
+    transform: scale(1.07);
+    opacity: 0.85;
+}
+
+/* Promotion button (devenir admin) */
+.btn-promote {
+    background: linear-gradient(45deg, #0052cc, #007bff);
+}
+
+/* Rétrograder admin */
+.btn-demote {
+    background: linear-gradient(45deg, #ff6b6b, #ff4757);
+}
+
+/* Bloquer */
+.btn-block {
+    background: linear-gradient(45deg, #ff3838, #c0392b);
+}
+
+/* Débloquer */
+.btn-unblock {
+    background: linear-gradient(45deg, #2ecc71, #27ae60);
+}
