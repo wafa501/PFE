@@ -10,7 +10,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.7.3",
-    "bootstrap": "^5.3.3",
+    "bootstrap": "^5.3.8",
     "chart.js": "^4.4.4",
     "cors": "^2.8.5",
     "laravel-echo": "^1.16.1",
